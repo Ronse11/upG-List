@@ -1,0 +1,159 @@
+
+.about{
+    width: 100%;
+    padding: 3rem 5rem;
+}
+.about_title{
+    border-left: 7px solid #0275d8;
+    padding-left: .5rem;
+    margin-bottom: 2rem;
+    overflow-y: auto;
+}
+
+.about_content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+}
+.about1{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 4rem;
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 2rem;
+    text-align: center;
+}
+.detail p{
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+.img img{
+    width: 35rem;
+    height: 23.25rem;
+    border-radius: 1rem;
+}
+.about2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+.about2 p{
+    font-weight: 600;
+}
+.about2 h3{
+    margin-bottom: 1rem;
+}
+.goal{
+    padding: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    background: lightblue;
+    border-radius: 1rem;
+    margin: 0 1rem 0 0;
+}
+.mission{
+    padding: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    border-radius: 1rem;
+}
+.vision{
+    padding: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    background: lightblue;
+    border-radius: 1rem;
+    margin: 0 0 0 1rem;
+}
+.about3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 4rem;
+}
+.ab3_title{
+    text-align: center;
+}
+.ab3_content{
+    display: flex;
+    justify-content: space-evenly;
+}
+.ab3_content h4{
+    color: #0275d8;
+}
+.con1{
+    padding: 1rem;
+    margin: 2rem 2rem 0 0;
+    border-right: 3px solid #0275d8;
+}
+.con2{
+    padding: 1rem;
+    margin: 2rem 0 0 0;
+}
+.con3{
+    padding: 1rem;
+    margin: 2rem 0 0 2rem;
+    border-left: 3px solid #0275d8;
+}
+.name{
+    overflow-y: hidden;
+}
+
+/* ANIMATION STARTS HERE */
+.img{
+    background-image: url('images/grocery3.jpg');
+    background-size: cover;
+    border-radius: 1rem;
+    height: 23.25rem;
+}
+.img img{
+    -webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+    -o-transition: all ease 1s;
+    -ms-transition: all ease 1s;
+    transition: all ease 1s;
+}
+.img img:hover {
+    opacity:0;
+}
+.goal:hover{
+    transform: translateY(-15px);
+    transition-duration: .5s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+.mission:hover{
+    transform: translateY(-15px);
+    transition-duration: .5s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+.vision:hover{
+    transform: translateY(-15px);
+    transition-duration: .5s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.about_title h1{
+    animation: ab_title 1s reverse;
+}
+@keyframes ab_title{
+    0% {transform: translateX(0)}
+    100% {transform: translateX(-220px);}
+}
+.con1:hover .name{
+    transform: translateY(-15px);
+    transition-duration: .5s;
+}
+.con2:hover .name{
+    transform: translateY(-15px);
+    transition-duration: .5s;
+}
+.con3:hover .name{
+    transform: translateY(-15px);
+    transition-duration: .5s;
+}
